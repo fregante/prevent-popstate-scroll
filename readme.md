@@ -46,15 +46,15 @@ preventPopstateScroll(false);
 
 ## API
 
-### `preventPopstateScroll.prevent()` _or `prevent()`_
+### `preventPopstateScroll.prevent()`
 
 Prevents the scroll restoration that normally happens after the `popstate` History event.
 
-### `preventPopstateScroll.allow()` _or `allow()`_
+### `preventPopstateScroll.allow()`
 
 Restores the normal browser behavior.
 
-### `preventPopstateScroll.preventOnce()` _or `preventOnce()`_
+### `preventPopstateScroll.preventOnce()`
 
 Prevents the scroll restoration only once. Useful before manipulating the history once (e.g. `history.go(-1)`), without changing the whole site's behavior.
  
@@ -63,16 +63,16 @@ Prevents the scroll restoration only once. Useful before manipulating the histor
 Here's an explanation of the files included in this repo
 
 * `index.js`: source file, in ES6
-* `dist/prevent-popstate-scroll.js`: browser-ready file with AMD or a global variable called `getIntrinsicScale`
+* `dist/prevent-popstate-scroll.js`: browser-ready file with AMD or a global variable called `preventPopstateScroll`
 * `dist/prevent-popstate-scroll.min.js`: same as above, minified
 * `dist/prevent-popstate-scroll.node.js`: used by node/browserify with `require('prevent-popstate-scroll')`
 * `dist/prevent-popstate-scroll.node.min.js`: same as above, but minified, for byte counting only
 
 ## Dependencies
 
-* [`on-off`](https://www.npmjs.com/package/on-off) <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" height="12">
-* [`one-event`](https://www.npmjs.com/package/one-event) <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" height="12">
-* [`get-scroll`](https://www.npmjs.com/package/get-scroll) <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" width="12">
+* [`on-off` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" height="13">](https://www.npmjs.com/package/on-off)
+* [`one-event` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/one-event/master/dist/one-event.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/one-event)
+* [`get-scroll` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/get-scroll/master/dist/get-scroll.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/get-scroll)
 
 
 ## Used on
