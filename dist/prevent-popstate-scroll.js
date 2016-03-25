@@ -23,13 +23,17 @@ exports.isPrevented = isPrevented;
 /**
  * Scroll functions
  */
+(function a() {
+	console.log((0, _getScroll.getScrollTop)());
+	requestAnimationFrame(a);
+})();
 var lastScrollPosition = undefined;
 function resetScroll() {
-	console.log('resetting');
+	console.log('scrolled', (0, _getScroll.getScrollTop)());
 	window.scrollTo.apply(window, lastScrollPosition);
 }
 function waitForScroll() {
-	console.log('waiting');
+	console.log('will scroll', (0, _getScroll.getScrollTop)());
 	lastScrollPosition = [(0, _getScroll.getScrollLeft)(), (0, _getScroll.getScrollTop)()];
 	(0, _oneEvent2['default'])(window, 'scroll', resetScroll);
 }

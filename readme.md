@@ -1,4 +1,4 @@
-# prevent-popstate-scroll [![module size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js?compression=gzip)](https://github.com/bfred-it/prevent-popstate-scroll/blob/master/dist/prevent-popstate-scroll.min.js)
+# prevent-popstate-scroll [![module size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js?compression=gzip)](https://github.com/bfred-it/prevent-popstate-scroll/blob/master/dist/prevent-popstate-scroll.node.min.js)
 
 > Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/bfred-it/prevent-popstate-scroll/master/demo.html)
 
