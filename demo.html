@@ -5,7 +5,6 @@
 	<meta charset="UTF-8" />
 	<title>Prevent Popstate Scroll demo</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<script src="dist/prevent-popstate-scroll.js"></script>
 	<style>
 		html {
 			font-family: sans-serif;
@@ -37,6 +36,7 @@
 
 
 <body>
+	<script src="dist/prevent-popstate-scroll.js"></script>
 	<div class="overlay">
 		<ol>
 			<li>Normal behavior: scroll is restored to where the user was before chainging URL (pushState, in this case)</li>
@@ -61,7 +61,7 @@
 		var start = count;
 		var timer = setInterval(function () {
 			window.scrollTo(0, Math.random()*4000);
-			history.pushState(history.state, '', '#'+count)
+			location.hash = '#'+count;
 			count++;
 			if (count > start + 4) {
 				clearInterval(timer);

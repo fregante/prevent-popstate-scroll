@@ -1,14 +1,9 @@
 {
   "name": "prevent-popstate-scroll",
-  "version": "1.0.0",
+  "version": "2.0.0b",
   "description": "Prevent the scroll restoration caused by the popstate event or back/forward buttons.",
   "license": "MIT",
-  "repository": "bfred-it/prevent-popstate-scroll",
-  "author": {
-    "name": "Federico Brigante",
-    "email": "bfred-it@users.noreply.github.com",
-    "url": "twitter.com/bfred_it"
-  },
+  "author": "Federico Brigante <bfred-it@users.noreply.github.com> (twitter.com/bfred_it)",
   "keywords": [
     "browser",
     "scroll-restoration",
@@ -19,25 +14,50 @@
     "ajax"
   ],
   "files": [
-    "index.js",
-    "dist/prevent-popstate-scroll.node.js"
+    "dist/prevent-popstate-scroll.common-js.js",
+    "dist/prevent-popstate-scroll.es-modules.js"
   ],
-  "main": "dist/prevent-popstate-scroll.node.js",
-  "jsnext:main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
+  "main": "dist/prevent-popstate-scroll.common-js.js",
+  "jsnext:main": "dist/prevent-popstate-scroll.es-modules.js",
+  "babel": {
+    "presets": [
+      "es2015-rollup"
+    ]
   },
   "scripts": {
-    "build": "./node_modules/bfred-npm-bundler/tasks/all.sh index.js preventPopstateScroll prevent-popstate-scroll",
-    "to-npm": "./node_modules/bfred-npm-bundler/tasks/to-npm.sh index.js prevent-popstate-scroll",
-    "prepublish": "npm run to-npm"
+    "build:js": "bfred-npm-bundler prevent-popstate-scroll preventPopstateScroll",
+    "build:size": "gzip-size dist/prevent-popstate-scroll.browser.js",
+    "build": "npm-run-all --silent jsfix build:*",
+    "jsfix": "xo --fix",
+    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "prepublish": "npm run build",
+    "test": "xo; npm-run-all build"
   },
   "devDependencies": {
-    "bfred-npm-bundler": "^1.1.2"
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "bfred-npm-bundler": "^5.0.0",
+    "gzip-size-cli": "^1.0.0",
+    "npm-run-all": "^1.7.0",
+    "onchange": "^2.2.0",
+    "xo": "^0.15.0"
   },
   "dependencies": {
     "get-scroll": "^1.0.0",
-    "on-off": "0.0.2",
+    "on-off": "^1.0.0",
     "one-event": "^1.0.0"
-  }
+  },
+  "xo": {
+    "esnext": true,
+    "env": [
+      "browser"
+    ],
+    "rules": {
+      "prefer-spread": 0
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/bfred-it/prevent-popstate-scroll/issues"
+  },
+  "homepage": "https://github.com/bfred-it/prevent-popstate-scroll#readme"
 }

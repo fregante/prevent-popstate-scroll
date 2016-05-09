@@ -1,6 +1,10 @@
-# prevent-popstate-scroll [![module size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js?compression=gzip)](https://github.com/bfred-it/prevent-popstate-scroll/blob/master/dist/prevent-popstate-scroll.min.js)
+# prevent-popstate-scroll
 
 > Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/bfred-it/prevent-popstate-scroll/master/demo.html)
+
+[![gzipped size](https://badges.herokuapp.com/size/github/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.browser.js?gzip=true&label=gzipped%20size)](#readme) [![Travis build status](https://api.travis-ci.org/bfred-it/prevent-popstate-scroll.svg?branch=master)](https://travis-ci.org/bfred-it/prevent-popstate-scroll) [![gzipped size](https://img.shields.io/npm/v/prevent-popstate-scroll.svg)](https://www.npmjs.com/package/prevent-popstate-scroll) 
+
+*Warning:* currently only working on Chrome and Safari. Firefox and IE will need a bit more work.
 
 ## Usage
 
@@ -57,16 +61,6 @@ Restores the normal browser behavior.
 ### `preventPopstateScroll.preventOnce()`
 
 Prevents the scroll restoration only once. Useful before manipulating the history once (e.g. `history.go(-1)`), without changing the whole site's behavior.
- 
-## Files
-
-Here's an explanation of the files included in this repo
-
-* `index.js`: source file, in ES6
-* `dist/prevent-popstate-scroll.js`: browser-ready file with AMD or a global variable called `preventPopstateScroll`
-* `dist/prevent-popstate-scroll.min.js`: same as above, minified
-* `dist/prevent-popstate-scroll.node.js`: used by node/browserify with `require('prevent-popstate-scroll')`
-* `dist/prevent-popstate-scroll.node.min.js`: same as above, but minified, for byte counting only
 
 ## Dependencies
 
