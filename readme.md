@@ -1,5 +1,7 @@
 # prevent-popstate-scroll
 
+## Deprecated: use `history.scrollRestoration` and [its polyfill](https://github.com/bfred-it/scroll-restoration-polyfill) instead, it has broader compatibility.
+
 > Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/bfred-it/prevent-popstate-scroll/master/demo.html)
 
 [![gzipped size](https://badges.herokuapp.com/size/github/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.browser.js?gzip=true&label=gzipped%20size)](#readme)
