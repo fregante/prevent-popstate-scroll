@@ -2,7 +2,9 @@
 
 > Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/bfred-it/prevent-popstate-scroll/master/demo.html)
 
-[![gzipped size](https://badges.herokuapp.com/size/github/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.browser.js?gzip=true&label=gzipped%20size)](#readme) [![Travis build status](https://api.travis-ci.org/bfred-it/prevent-popstate-scroll.svg?branch=master)](https://travis-ci.org/bfred-it/prevent-popstate-scroll) [![gzipped size](https://img.shields.io/npm/v/prevent-popstate-scroll.svg)](https://www.npmjs.com/package/prevent-popstate-scroll) 
+[![gzipped size](https://badges.herokuapp.com/size/github/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.browser.js?gzip=true&label=gzipped%20size)](#readme)
+[![Travis build status](https://api.travis-ci.org/bfred-it/prevent-popstate-scroll.svg?branch=master)](https://travis-ci.org/bfred-it/prevent-popstate-scroll)
+[![npm version](https://img.shields.io/npm/v/prevent-popstate-scroll.svg)](https://www.npmjs.com/package/prevent-popstate-scroll) 
 
 *Warning:* currently only working on Chrome and Safari. Firefox and IE will need a bit more work.
 
@@ -65,8 +67,8 @@ Prevents the scroll restoration only once. Useful before manipulating the histor
 ## Dependencies
 
 * [`on-off` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" height="13">](https://www.npmjs.com/package/on-off)
-* [`one-event` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/one-event/master/dist/one-event.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/one-event)
-* [`get-scroll` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/get-scroll/master/dist/get-scroll.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/get-scroll)
+* [`one-event` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/one-event/master/dist/one-event.browser.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/one-event)
+* [`get-scroll` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/get-scroll/master/dist/get-scroll.browser.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/get-scroll)
 
 
 ## Used on
