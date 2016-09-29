@@ -1,6 +1,6 @@
 {
   "name": "prevent-popstate-scroll",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Prevent the scroll restoration caused by the popstate event or back/forward buttons.",
   "license": "MIT",
   "author": "Federico Brigante <bfred-it@users.noreply.github.com> (twitter.com/bfred_it)",
