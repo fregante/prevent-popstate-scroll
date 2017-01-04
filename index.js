@@ -1,4 +1,3 @@
-'use strict';
 import {getScrollTop, getScrollLeft} from 'get-scroll';
 import {on as attach, off as remove} from 'on-off';
 import once from 'one-event';
