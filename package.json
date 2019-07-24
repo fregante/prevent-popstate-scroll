@@ -2,36 +2,34 @@
   "name": "prevent-popstate-scroll",
   "version": "1.0.0",
   "description": "Prevent the scroll restoration caused by the popstate event or back/forward buttons.",
-  "license": "MIT",
-  "repository": "bfred-it/prevent-popstate-scroll",
-  "author": {
-    "name": "Federico Brigante",
-    "email": "bfred-it@users.noreply.github.com",
-    "url": "twitter.com/bfred_it"
-  },
   "keywords": [
-    "browser",
-    "scroll-restoration",
+    "ajax",
     "back-button",
+    "browser",
     "history",
     "history-api",
     "replacestate",
-    "ajax"
+    "scroll-restoration"
   ],
+  "repository": "fregante/prevent-popstate-scroll",
+  "license": "MIT",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "files": [
     "index.js",
     "dist/prevent-popstate-scroll.node.js"
   ],
   "main": "dist/prevent-popstate-scroll.node.js",
   "jsnext:main": "index.js",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "scripts": {
-    "test": "zuul -- tests/index.js",
     "build": "./node_modules/bfred-npm-bundler/tasks/all.sh index.js preventPopstateScroll prevent-popstate-scroll",
-    "to-npm": "./node_modules/bfred-npm-bundler/tasks/to-npm.sh index.js prevent-popstate-scroll",
-    "prepublish": "npm run to-npm"
+    "prepublish": "npm run to-npm",
+    "test": "zuul -- tests/index.js",
+    "to-npm": "./node_modules/bfred-npm-bundler/tasks/to-npm.sh index.js prevent-popstate-scroll"
+  },
+  "dependencies": {
+    "get-scroll": "^1.0.0",
+    "on-off": "0.0.2",
+    "one-event": "^1.0.0"
   },
   "devDependencies": {
     "bfred-npm-bundler": "^1.1.2",
@@ -39,9 +37,7 @@
     "tape": "^4.5.1",
     "zuul": "^3.10.1"
   },
-  "dependencies": {
-    "get-scroll": "^1.0.0",
-    "on-off": "0.0.2",
-    "one-event": "^1.0.0"
+  "engines": {
+    "node": ">=0.10.0"
   }
 }

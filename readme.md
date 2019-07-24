@@ -1,6 +1,6 @@
-# prevent-popstate-scroll [![module size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/bfred-it/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js?compression=gzip)](https://github.com/bfred-it/prevent-popstate-scroll/blob/master/dist/prevent-popstate-scroll.node.min.js)
+# prevent-popstate-scroll [![module size](https://badge-size.herokuapp.com/fregante/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js) ![module gzipped size](https://badge-size.herokuapp.com/fregante/prevent-popstate-scroll/master/dist/prevent-popstate-scroll.node.min.js?compression=gzip)](https://github.com/fregante/prevent-popstate-scroll/blob/master/dist/prevent-popstate-scroll.node.min.js)
 
-> Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/bfred-it/prevent-popstate-scroll/master/demo.html)
+> Prevent the scroll restoration caused by the `popstate` event or back/forward buttons. [Demo](https://rawgit.com/fregante/prevent-popstate-scroll/master/demo.html)
 
 ## Usage
 
@@ -57,7 +57,7 @@ Restores the normal browser behavior.
 ### `preventPopstateScroll.preventOnce()`
 
 Prevents the scroll restoration only once. Useful before manipulating the history once (e.g. `history.go(-1)`), without changing the whole site's behavior.
- 
+
 ## Files
 
 Here's an explanation of the files included in this repo
@@ -71,14 +71,14 @@ Here's an explanation of the files included in this repo
 ## Dependencies
 
 * [`on-off` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/npm-dom/dom-event/master/index.js?compression=gzip&amp;label=size" height="13">](https://www.npmjs.com/package/on-off)
-* [`one-event` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/one-event/master/dist/one-event.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/one-event)
-* [`get-scroll` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/bfred-it/get-scroll/master/dist/get-scroll.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/bfred-it/get-scroll)
+* [`one-event` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/fregante/one-event/master/dist/one-event.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/fregante/one-event)
+* [`get-scroll` <img alt="dependency gzipped size" src="https://badge-size.herokuapp.com/fregante/get-scroll/master/dist/get-scroll.node.min.js?compression=gzip&amp;label=size" height="13">](https://github.com/fregante/get-scroll)
 
 
 ## Used on
 
-* http://away.gorving.com/ — to avoid scroll jumping when closing history-enabled lightboxes (i.e. closable via back button)
+* https://away.gorving.com/ — to avoid scroll jumping when closing history-enabled lightboxes (i.e. closable via back button)
 
 ## License
 
-MIT © [Federico Brigante](http://twitter.com/bfred_it)
+MIT © [Federico Brigante](https://bfred.it)
